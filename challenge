@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>52 Weeks of Fraud – Global Investigator Training Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="52 Weeks of Fraud is a year-long investigator training challenge featuring weekly scenarios, leaderboards, and prizes."
+  />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      background-color: #f9fafb;
+      line-height: 1.6;
+    }
+    header,
+    section,
+    footer {
+      padding: 3rem 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    h1, h2, h3 {
+      color: #020617;
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 2.6rem;
+      letter-spacing: -0.04em;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.03em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin: 0.35rem 0;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      color: #64748b;
+      font-weight: 600;
+    }
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #1f2937;
+      margin-top: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background-color: #e0f2fe;
+      color: #075985;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      background-color: #0f766e;
+      color: #ecfeff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+    .cta-button:hover {
+      background-color: #115e59;
+    }
+    .muted {
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.75rem;
+      margin-top: 1.25rem;
+    }
+    .pill-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.5rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .pill-list li {
+      font-size: 0.8rem;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      background-color: #e5e7eb;
+      color: #374151;
+    }
+    .check-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.5rem 0 0;
+    }
+    .check-list li::before {
+      content: "✓";
+      color: #0f766e;
+      margin-right: 0.4rem;
+      font-weight: 600;
+    }
+    .check-list li {
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+    .number-list {
+      list-style: decimal;
+      padding-left: 1.25rem;
+      margin: 0.5rem 0 0;
+      font-size: 0.95rem;
+    }
+    .label {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+    .center {
+      text-align: center;
+    }
+    .small {
+      font-size: 0.85rem;
+    }
+    footer {
+      padding-top: 1.5rem;
+      padding-bottom: 2.5rem;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.8rem;
+    }
+    @media (max-width: 768px) {
+      header, section {
+        padding: 2.25rem 1.25rem;
+      }
+      h1 {
+        font-size: 2.1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="eyebrow">CaseBunker &amp; Relancy Present</div>
+    <h1>52 Weeks of Fraud</h1>
+    <p class="hero-subtitle">
+      A year‑long investigator training challenge featuring weekly scenarios, leaderboards, and recognition
+      for the professionals who protect their organizations from fraud and loss.
+    </p>
+    <p class="badge">Free to join during Beta</p>
+    <p>
+      One new scenario every week. Latecomers get access to the full archive. You can compete as an individual,
+      represent your company, or bring your whole team.
+    </p>
+    <a href="#signup" class="cta-button">Join the Challenge</a>
+    <p class="muted">
+      We only need your name, company, and email to get started.
+    </p>
+  </header>
+
+  <!-- WHAT IT IS -->
+  <section>
+    <div class="label">Overview</div>
+    <h2>What is “52 Weeks of Fraud”?</h2>
+    <p>
+      52 Weeks of Fraud is a global training series built around one simple idea:
+      investigators learn best by working real‑world cases — not by clicking through slides.
+    </p>
+    <p>
+      Every week, you’ll receive access to a new CaseBunker scenario designed from field‑tested patterns of
+      fraud, process failure, and operational loss.
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>What you get</h3>
+        <ul class="check-list">
+          <li>1 new fraud or loss scenario every week</li>
+          <li>Access to all previously released scenarios</li>
+          <li>Individual and (optional) company leaderboards</li>
+          <li>Weekly recognition and spotlight features</li>
+          <li>Participation badges and completion records</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What it costs</h3>
+        <ul class="check-list">
+          <li>Free during the Beta season</li>
+          <li>No payment details required to join</li>
+          <li>Upgrade paths for organizations after Beta</li>
+        </ul>
+        <p class="muted small">
+          Our goal in this first season is simple: build the best investigator training canon on the market
+          and prove its value in the real world.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="label">How it works</div>
+    <h2>One scenario per week. Simple structure. Serious depth.</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3>The weekly cadence</h3>
+        <ol class="number-list">
+          <li><strong>Monday:</strong> A new scenario is released in CaseBunker.</li>
+          <li><strong>Monday–Sunday:</strong> Participants complete the scenario at their own pace.</li>
+          <li><strong>End of week:</strong> Scores are locked and weekly standings are updated.</li>
+          <li><strong>Following week:</strong> Highlights and learning points are shared.</li>
+        </ol>
+        <p>
+          Late to the party? No problem. When you join, you get access to all scenarios released so far,
+          and you can work through them on your own schedule.
+        </p>
+      </div>
+      <div>
+        <h3>The scenario format</h3>
+        <ul class="check-list">
+          <li>Short narrative setup based on real patterns</li>
+          <li>Evidence, events, and decisions to work through</li>
+          <li>Clear learning objectives for each case</li>
+          <li>Scoring logic tied to judgment, not random guessing</li>
+          <li>Reflection and key takeaways at the end</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO CAN PARTICIPATE -->
+  <section>
+    <div class="label">Who can participate</div>
+    <h2>Built for investigators, open to anyone serious about loss.</h2>
+    <p>
+      52 Weeks of Fraud is for professionals who touch investigations, loss, fraud, risk, and operations:
+    </p>
+    <ul class="pill-list">
+      <li>Loss Prevention &amp; Asset Protection</li>
+      <li>Store &amp; Field Operations</li>
+      <li>HR &amp; Employee Relations</li>
+      <li>Risk Management</li>
+      <li>Fraud &amp; Investigations</li>
+      <li>Distribution &amp; Logistics</li>
+      <li>Corporate Security</li>
+      <li>Audit &amp; Controls</li>
+      <li>Compliance</li>
+      <li>Training &amp; L&amp;D</li>
+    </ul>
+    <p>
+      You can join as:
+    </p>
+    <ul class="check-list">
+      <li>An individual investigator or manager</li>
+      <li>A small team or department</li>
+      <li>A full organization looking to pilot CaseBunker</li>
+    </ul>
+  </section>
+
+  <!-- SCORING & LEADERBOARDS -->
+  <section>
+    <div class="label">Scoring &amp; leaderboards</div>
+    <h2>We’re not just measuring speed. We’re measuring judgment.</h2>
+    <p>
+      Every scenario is scored using a structured model inside CaseBunker. The goal isn’t to reward whoever clicks
+      the fastest — it’s to highlight investigators who make strong, defensible decisions.
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Example weekly recognition</h3>
+        <ul class="check-list">
+          <li>Fastest Correct Completion</li>
+          <li>Highest Accuracy Score</li>
+          <li>Best Decision Path (minimal missteps)</li>
+          <li>Zero‑Hint Completion</li>
+          <li>Most Improved Investigator</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Team &amp; company metrics</h3>
+        <ul class="check-list">
+          <li>Top Company / Top Team of the Week</li>
+          <li>Average score by organization</li>
+          <li>Participation and completion rates</li>
+          <li>Consistency across multiple weeks</li>
+        </ul>
+        <p class="muted small">
+          Company‑level metrics are only shared publicly if organizations opt in. Otherwise, they are used to
+          provide private insights to participating teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIZES & RECOGNITION -->
+  <section>
+    <div class="label">Prizes &amp; recognition</div>
+    <h2>Real recognition for real work.</h2>
+    <p>
+      The core reward is professional growth — but we’ll also make it fun.
+    </p>
+
+    <div class="grid-2">
+      <div>
+        <h3>Weekly highlights</h3>
+        <ul class="check-list">
+          <li>Shout‑outs for top performers</li>
+          <li>Feature spotlights on standout decision‑making</li>
+          <li>Recognition badges inside CaseBunker</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Season‑wide recognition</h3>
+        <ul class="check-list">
+          <li>End‑of‑year &ldquo;Top Investigator&rdquo; and &ldquo;Top Team&rdquo; recognition</li>
+          <li>Completion badges for full‑season participation</li>
+          <li>Opportunities to influence future scenarios</li>
+        </ul>
+        <p class="muted small">
+          Specific physical or digital prizes will be announced as the Beta season progresses and may vary by region.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RULES SECTION -->
+  <section>
+    <div class="label">Basic rules</div>
+    <h2>Simple rules. Serious expectations.</h2>
+    <p>
+      52 Weeks of Fraud is for professionals who take integrity seriously. A few ground rules:
+    </p>
+    <ol class="number-list">
+      <li>Each participant must register with their own name, company, and email.</li>
+      <li>Scenarios should be completed individually — collaboration is great for learning, but individual scores reflect individual work.</li>
+      <li>Do not share answer keys or internal scoring logic outside your team.</li>
+      <li>Respect confidentiality: do not share any real client, company, or case data in scenario discussions.</li>
+      <li>We reserve the right to adjust scoring models, categories, and recognition to keep the contest fair and meaningful.</li>
+    </ol>
+    <p class="muted small">
+      Full terms and conditions will be available at registration and may vary by jurisdiction.
+    </p>
+  </section>
+
+  <!-- SIGNUP SECTION -->
+  <section id="signup">
+    <div class="card">
+      <div class="label">Join the challenge</div>
+      <h2>Sign up for 52 Weeks of Fraud.</h2>
+      <p>
+        Enter your details below to join the early access list. You’ll receive information on start dates,
+        how to access CaseBunker, and what to expect in the first scenarios.
+      </p>
+      <p><strong>We only need:</strong></p>
+      <ul class="check-list">
+        <li>Name</li>
+        <li>Company</li>
+        <li>Email</li>
+      </ul>
+      <p class="muted">
+        Once the season begins, you’ll receive weekly scenario notifications, leaderboard updates, and occasional
+        highlight recaps. No spam, no fluff.
+      </p>
+
+      <!-- Replace this with your actual backend endpoint -->
+      <form action="/52-weeks-signup" method="post">
+        <div style="margin-bottom: 0.75rem;">
+          <label for="name" style="display:block;font-size:0.85rem;color:#4b5563;margin-bottom:0.15rem;">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            style="width:100%;padding:0.55rem 0.6rem;border-radius:0.5rem;border:1px solid #cbd5e1;font-size:0.95rem;"
+          />
+        </div>
+
+        <div style="margin-bottom: 0.75rem;">
+          <label for="company" style="display:block;font-size:0.85rem;color:#4b5563;margin-bottom:0.15rem;">Company</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            required
+            style="width:100%;padding:0.55rem 0.6rem;border-radius:0.5rem;border:1px solid #cbd5e1;font-size:0.95rem;"
+          />
+        </div>
+
+        <div style="margin-bottom: 0.75rem;">
+          <label for="email" style="display:block;font-size:0.85rem;color:#4b5563;margin-bottom:0.15rem;">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            style="width:100%;padding:0.55rem 0.6rem;border-radius:0.5rem;border:1px solid #cbd5e1;font-size:0.95rem;"
+          />
+        </div>
+
+        <button type="submit" class="cta-button">Join 52 Weeks of Fraud</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="center">
+    <div class="label">Why now</div>
+    <h2>The best time to sharpen your edge is before the next incident.</h2>
+    <p>
+      52 Weeks of Fraud is your chance to turn training into a habit,
+      build a shared language with your peers, and prove — to yourself and your organization —
+      how seriously you take this work.
+    </p>
+    <a href="#signup" class="cta-button">Get Started</a>
+    <p class="muted" style="margin-top:0.75rem;">
+      Whether you join alone or with a team, you’ll be part of a global community of professionals committed
+      to better investigations, better decisions, and better outcomes.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Relancy &amp; CaseBunker. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
