@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CaseBunker – The Investigator Training Engine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="CaseBunker is the immersive investigator training engine built on realistic fraud and loss scenarios. Join the 52 Weeks of Fraud launch."
+  />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      background-color: #f9fafb;
+      line-height: 1.6;
+    }
+    header,
+    section,
+    footer {
+      padding: 3rem 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    h1, h2, h3 {
+      color: #020617;
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 2.6rem;
+      letter-spacing: -0.04em;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.03em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin: 0.35rem 0;
+    }
+    .hero-eyebrow,
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      color: #64748b;
+      font-weight: 600;
+    }
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: #1f2933;
+      margin-top: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background-color: #e0f2fe;
+      color: #075985;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      background-color: #0f766e;
+      color: #ecfeff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+    .cta-button:hover {
+      background-color: #115e59;
+    }
+    .muted {
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.6fr);
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .pill-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.5rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .pill-list li {
+      font-size: 0.8rem;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      background-color: #e5e7eb;
+      color: #374151;
+    }
+    .check-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.5rem 0 0;
+    }
+    .check-list li::before {
+      content: "✓";
+      color: #0f766e;
+      margin-right: 0.4rem;
+      font-weight: 600;
+    }
+    .check-list li {
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.75rem;
+      margin-top: 1.25rem;
+    }
+    .center {
+      text-align: center;
+    }
+    .small {
+      font-size: 0.85rem;
+    }
+    footer {
+      padding-top: 1.5rem;
+      padding-bottom: 2.5rem;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.8rem;
+    }
+    @media (max-width: 768px) {
+      header, section {
+        padding: 2.25rem 1.25rem;
+      }
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 2.1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="hero-eyebrow">CaseBunker</div>
+    <h1>The Investigator Training Engine</h1>
+    <p class="hero-subtitle">
+      Realistic scenarios. Operational credibility. Zero fluff.
+      CaseBunker is the immersive training platform that teaches investigators how to think,
+      not just what to click.
+    </p>
+    <p>
+      Built from real‑world fraud patterns, operational failures, and cultural blind spots,
+      CaseBunker gives teams the instincts and judgment they need to protect the business.
+    </p>
+    <p class="badge">Join the launch list for 52 Weeks of Fraud</p>
+    <p>
+      One new scenario every week. Free during Beta.
+    </p>
+    <a href="#signup" class="cta-button">Get Early Access</a>
+  </header>
+
+  <!-- WHAT CASEBUNKER IS -->
+  <section>
+    <div class="two-column">
+      <div>
+        <div class="section-label">What CaseBunker is</div>
+        <h2>Training that feels like the real thing — because it is.</h2>
+        <p>
+          CaseBunker isn’t a game. It’s a <strong>simulation environment</strong> built for professionals who deal
+          with fraud, loss, and operational breakdowns every day.
+        </p>
+        <p>Inside CaseBunker, investigators work through:</p>
+        <ul class="check-list">
+          <li>Realistic case files and narratives</li>
+          <li>Evidence, timelines, and task flows</li>
+          <li>Interviews and high‑stakes decision points</li>
+          <li>Escalation paths and governance failures</li>
+          <li>Fraud, process failure, and labor waste in one view</li>
+          <li>Cultural and systemic risk patterns</li>
+        </ul>
+        <p>
+          Every scenario is built to sharpen judgment, not just test knowledge.
+        </p>
+      </div>
+      <div class="card">
+        <h3>For investigators who take the work seriously</h3>
+        <p class="small">
+          CaseBunker is for teams who know their job can’t be reduced to multiple‑choice questions.
+        </p>
+        <p class="small">
+          The platform is designed to mirror how investigations actually unfold:
+        </p>
+        <ul class="check-list small">
+          <li>Incomplete information and conflicting signals</li>
+          <li>Time pressure and operational constraints</li>
+          <li>Human behavior, culture, and misaligned incentives</li>
+          <li>Tradeoffs between speed, certainty, and impact</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY TEAMS USE CASEBUNKER -->
+  <section>
+    <div class="section-label">Why teams use CaseBunker</div>
+    <h2>Investigators deserve better than slide decks and guessing games.</h2>
+    <p>
+      CaseBunker gives teams a dedicated environment to practice investigation the way they actually work:
+      by following threads, weighing signals, and making decisions under pressure.
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Built for realism</h3>
+        <ul class="check-list">
+          <li>Immersive scenarios that mirror real investigations</li>
+          <li>Decision‑based scoring that rewards good judgment</li>
+          <li>Patterns grounded in field‑tested fraud and loss</li>
+          <li>Cross‑functional training that spans LP, HR, Ops, and Finance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Built for teams</h3>
+        <ul class="check-list">
+          <li>Leaderboards and recognition for top performers</li>
+          <li>Team‑level performance insights and trends</li>
+          <li>Safe space to practice difficult decisions</li>
+          <li>Shared language for patterns, risks, and controls</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 52 WEEKS OF FRAUD -->
+  <section>
+    <div class="section-label">52 Weeks of Fraud</div>
+    <h2>A year‑long training league for investigators.</h2>
+    <p>
+      CaseBunker is launching with a global training event:
+      <strong>52 Weeks of Fraud</strong> — one new scenario every week for an entire year.
+    </p>
+    <div class="grid-2">
+      <div>
+        <h3>What participants get</h3>
+        <ul class="check-list">
+          <li>Weekly fraud and loss scenarios</li>
+          <li>Access to all previously released cases</li>
+          <li>Leaderboards and weekly recognition</li>
+          <li>Prizes for top performers</li>
+          <li>A growing community of professionals</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Join anytime</h3>
+        <ul class="check-list">
+          <li>Latecomers get access to the full archive</li>
+          <li>Self‑paced catch‑up for busy teams</li>
+          <li>Ideal for both individuals and organizations</li>
+        </ul>
+        <p class="muted">
+          This isn’t a raffle. It’s a proving ground for investigators who want to sharpen their edge.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO CASEBUNKER IS FOR -->
+  <section>
+    <div class="section-label">Who CaseBunker is for</div>
+    <h2>If you investigate, lead, or prevent loss — this is for you.</h2>
+    <p>
+      CaseBunker is designed for professionals responsible for fraud, loss, culture, and controls across the business.
+    </p>
+    <ul class="pill-list">
+      <li>Loss Prevention</li>
+      <li>Asset Protection</li>
+      <li>Store &amp; Field Operations</li>
+      <li>HR &amp; Compliance</li>
+      <li>Risk Management</li>
+      <li>Fraud &amp; Investigations</li>
+      <li>Distribution &amp; Logistics</li>
+      <li>Corporate Security</li>
+      <li>Audit &amp; Controls</li>
+    </ul>
+    <p>
+      Whether you’re a new investigator or a seasoned operator, CaseBunker gives you the patterns, instincts,
+      and frameworks that transfer directly to the field.
+    </p>
+  </section>
+
+  <!-- HOW CASEBUNKER WORKS -->
+  <section>
+    <div class="section-label">How CaseBunker works</div>
+    <h2>A complete investigative workspace — built for training.</h2>
+    <p>
+      Inside every CaseBunker scenario, investigators interact with the same kinds of elements they see in real work:
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>The case structure</h3>
+        <ul class="check-list">
+          <li>Persons and roles</li>
+          <li>Evidence and documents</li>
+          <li>Timeline events</li>
+          <li>Tasks, escalations, and follow‑ups</li>
+          <li>Facts and canonical findings</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>The scoring engine</h3>
+        <ul class="check-list">
+          <li>Decision points with meaningful consequences</li>
+          <li>Scoring that reflects judgment, not just speed</li>
+          <li>Paths that separate lucky guesses from real skill</li>
+          <li>Signals leaders can use to coach and develop talent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CASEBUNKER IS DIFFERENT -->
+  <section>
+    <div class="section-label">Why CaseBunker is different</div>
+    <h2>Realistic. Structured. Audit‑ready.</h2>
+    <p>
+      CaseBunker scenarios are built on a structured, schema‑driven backbone — the same architecture that powers
+      serious investigative work.
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Field‑credible</h3>
+        <ul class="check-list">
+          <li>Based on real patterns and operational failures</li>
+          <li>Narrative‑rich to teach context and psychology</li>
+          <li>Cross‑disciplinary by design</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Team‑ready</h3>
+        <ul class="check-list">
+          <li>Leaderboards, recognition, and friendly competition</li>
+          <li>Audit‑friendly logic and scoring transparency</li>
+          <li>Scalable across regions, brands, and functions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP SECTION -->
+  <section id="signup">
+    <div class="card">
+      <div class="section-label">Early access</div>
+      <h2>Get early access to CaseBunker + 52 Weeks of Fraud.</h2>
+      <p>
+        Join the launch list to receive early access to CaseBunker Beta and the full 52 Weeks of Fraud training
+        event as it goes live.
+      </p>
+      <p><strong>We only need:</strong></p>
+      <ul class="check-list">
+        <li>Name</li>
+        <li>Company</li>
+        <li>Email</li>
+      </ul>
+      <p class="muted">
+        You’ll receive early access invitations, weekly scenarios during the Beta period, and eligibility for
+        recognition and prizes.
+      </p>
+
+      <!-- Replace this with your actual form implementation -->
+      <form action="/signup" method="post">
+        <div style="margin-bottom: 0.75rem;">
+          <label for="name" style="display:block;font-size:0.85rem;color:#4b5563;margin-bottom:0.15rem;">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            style="width:100%;padding:0.55rem 0.6rem;border-radius:0.5rem;border:1px solid #cbd5e1;font-size:0.95rem;"
+          />
+        </div>
+
+        <div style="margin-bottom: 0.75rem;">
+          <label for="company" style="display:block;font-size:0.85rem;color:#4b5563;margin-bottom:0.15rem;">Company</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            required
+            style="width:100%;padding:0.55rem 0.6rem;border-radius:0.5rem;border:1px solid #cbd5e1;font-size:0.95rem;"
+          />
+        </div>
+
+        <div style="margin-bottom: 0.75rem;">
+          <label for="email" style="display:block;font-size:0.85rem;color:#4b5563;margin-bottom:0.15rem;">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            style="width:100%;padding:0.55rem 0.6rem;border-radius:0.5rem;border:1px solid #cbd5e1;font-size:0.95rem;"
+          />
+        </div>
+
+        <button type="submit" class="cta-button">Join the Early Access List</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section>
+    <div class="section-label">The CaseBunker philosophy</div>
+    <h2>Fraud is never just fraud. Training shouldn’t be either.</h2>
+    <p>
+      CaseBunker teaches investigators to distinguish:
+    </p>
+    <ul class="check-list">
+      <li>Malicious intent vs. honest mistake</li>
+      <li>Individual misconduct vs. systemic failure</li>
+      <li>Labor waste vs. deliberate exploitation</li>
+      <li>Culture problems vs. process gaps</li>
+    </ul>
+    <p>
+      The real world isn’t binary, and neither is CaseBunker. Our scenarios reflect the messy, overlapping realities
+      of fraud, loss, and operations — so your teams are ready for what actually happens.
+    </p>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="center">
+    <div class="section-label">Start here</div>
+    <h2>The future of investigator training starts here.</h2>
+    <p>
+      Join the early access list and get the first CaseBunker scenarios the moment they drop, along with full
+      participation in 52 Weeks of Fraud.
+    </p>
+    <a href="#signup" class="cta-button">Sign Up Now</a>
+    <p class="muted" style="margin-top:0.75rem;">
+      No spam. No fluff. Just operationally credible training for people who take fraud, loss, and culture seriously.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> CaseBunker. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
